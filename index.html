@@ -1,280 +1,240 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>作品集</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
-            background: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        .page-image {
-            background: white;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .page-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            .container {
-                padding: 10px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>个人作品集</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #050505;
+      color: #f8fafc;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+    }
+    .glass {
+      background: rgba(15, 23, 42, 0.72);
+      border: 1px solid rgba(148, 163, 184, 0.18);
+      backdrop-filter: blur(20px);
+    }
+    .nav-link:hover,
+    .tab-link:hover {
+      color: #e2e8f0;
+    }
+    .project-section {
+      scroll-margin-top: 120px;
+    }
+    
+    .quick-nav-head {
+      display: none;
+    }
+    #quick-nav.condensed .project-link img {
+      display: none;
+    }
+    .project-link img {
+      border-radius: 30px;
+    }
+    .project-link:hover img,
+    .project-link:focus img,
+    .project-link:active img {
+      border-radius: 30px;
+    }
+    .project-card-text {
+      margin-top: 24px;
+    }
+  </style>
 </head>
-<body>
-    <div class="container">
-        <div class="page-image">
-            <img src="images/page_001.png" alt="Page 1" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_002.png" alt="Page 2" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_003.png" alt="Page 3" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_004.png" alt="Page 4" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_005.png" alt="Page 5" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_006.png" alt="Page 6" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_007.png" alt="Page 7" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_008.png" alt="Page 8" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_009.png" alt="Page 9" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_010.png" alt="Page 10" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_011.png" alt="Page 11" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_012.png" alt="Page 12" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_013.png" alt="Page 13" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_014.png" alt="Page 14" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_015.png" alt="Page 15" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_016.png" alt="Page 16" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_017.png" alt="Page 17" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_018.png" alt="Page 18" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_019.png" alt="Page 19" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_020.png" alt="Page 20" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_021.png" alt="Page 21" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_022.png" alt="Page 22" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_023.png" alt="Page 23" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_024.png" alt="Page 24" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_025.png" alt="Page 25" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_026.png" alt="Page 26" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_027.png" alt="Page 27" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_028.png" alt="Page 28" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_029.png" alt="Page 29" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_030.png" alt="Page 30" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_031.png" alt="Page 31" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_032.png" alt="Page 32" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_033.png" alt="Page 33" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_034.png" alt="Page 34" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_035.png" alt="Page 35" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_036.png" alt="Page 36" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_037.png" alt="Page 37" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_038.png" alt="Page 38" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_039.png" alt="Page 39" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_040.png" alt="Page 40" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_041.png" alt="Page 41" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_042.png" alt="Page 42" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_043.png" alt="Page 43" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_044.png" alt="Page 44" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_045.png" alt="Page 45" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_046.png" alt="Page 46" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_047.png" alt="Page 47" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_048.png" alt="Page 48" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_049.png" alt="Page 49" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_050.png" alt="Page 50" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_051.png" alt="Page 51" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_052.png" alt="Page 52" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_053.png" alt="Page 53" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_054.png" alt="Page 54" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_055.png" alt="Page 55" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_056.png" alt="Page 56" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_057.png" alt="Page 57" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_058.png" alt="Page 58" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_059.png" alt="Page 59" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_060.png" alt="Page 60" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_061.png" alt="Page 61" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_062.png" alt="Page 62" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_063.png" alt="Page 63" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_064.png" alt="Page 64" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_065.png" alt="Page 65" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_066.png" alt="Page 66" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_067.png" alt="Page 67" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_068.png" alt="Page 68" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_069.png" alt="Page 69" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_070.png" alt="Page 70" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_071.png" alt="Page 71" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_072.png" alt="Page 72" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_073.png" alt="Page 73" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_074.png" alt="Page 74" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_075.png" alt="Page 75" loading="lazy">
-        </div>
-        <div class="page-image">
-            <img src="images/page_076.png" alt="Page 76" loading="lazy">
-        </div>
+<body id="top" class="antialiased">
+  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-5 md:flex-row md:items-center md:justify-between">
+      <div class="flex items-center gap-4">
+        <div class="flex h-20 w-20 items-center justify-center rounded-3xl bg-slate-800 text-3xl font-semibold text-sky-400 shadow-[0_10px_30px_rgba(56,189,248,0.16)]">V</div>
+        <div>
+          <p class="text-xs uppercase tracking-[0.35em] text-slate-500">产品设计 / 视觉体验</p>
+          <h1 class="mt-2 text-2xl font-semibold text-white">张丽芳</h1>
+          <p class="mt-1 max-w-xl text-sm leading-6 text-slate-400">专注现代简约风，擅长B端设计、视觉系统与产品交互。</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between md:gap-[150px]">
+        <div class="flex min-w-[260px] items-center gap-4">
+          <img src="./images/QRcode.png" alt="QRcode" class="h-20 w-20 object-cover" />
+          <div class="space-y-4 text-sm text-slate-200/70">
+            <p class="font-semibold">联系方式</p>
+            <div class="space-y-1">
+              <p>手机号：18301414035</p>
+              <p>邮箱：zlf4990793@163.com</p>
+            </div>
+          </div>
+        </div>
+      <nav class="flex flex-wrap items-center gap-3 text-sm font-medium text-slate-400">
+        <a href="#works" class="nav-link transition">作品集</a>
+          <span class="cursor-not-allowed text-slate-500">学习资料</span>
+          <span class="cursor-not-allowed text-slate-500">练习册</span>
+          <span class="cursor-not-allowed text-slate-500">关键词总结</span>
+      </nav>
     </div>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-7xl px-5 py-10">
+    <section id="works" class="space-y-10">
+      <div id="quick-nav" class="sticky top-0 z-40 relative bg-slate-950/95 backdrop-blur-lg py-4">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-5 px-5">
+          <a href="#project-homepage-redesign" class="group overflow-hidden project-link transition">
+            <img src="./images/Homepage_Redesign/page_005.png" alt="首页改版封面" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+            <div class="project-card-text">
+              <h3 class="text-lg font-semibold text-white">首页改版</h3>
+              <p class="mt-2 text-sm text-slate-400">设计驱动力</p>
+            </div>
+          </a>
+          <a href="#project-vipcard" class="group overflow-hidden project-link transition">
+            <img src="./images/VIPcard/page_022.png" alt="权益卡搭建封面" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+            <div class="project-card-text">
+              <h3 class="text-lg font-semibold text-white">权益卡搭建</h3>
+              <p class="mt-2 text-sm text-slate-400">业务拆解能力</p>
+            </div>
+          </a>
+          <a href="#project-rental" class="group overflow-hidden project-link transition">
+            <img src="./images/Rental/page_043.png" alt="租赁业务封面" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+            <div class="project-card-text">
+              <h3 class="text-lg font-semibold text-white">租赁业务</h3>
+              <p class="mt-2 text-sm text-slate-400">AI赋能</p>
+            </div>
+          </a>
+          <a href="#project-bend" class="group overflow-hidden project-link transition">
+            <img src="./images/B2B/page_051.png" alt="门店系统封面" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+            <div class="project-card-text">
+              <h3 class="text-lg font-semibold text-white">门店系统</h3>
+              <p class="mt-2 text-sm text-slate-400">B端能力</p>
+            </div>
+          </a>
+          <a href="#project-insurance" class="group overflow-hidden project-link transition">
+            <img src="./images/Insurance/page_066.png" alt="和谐健康封面" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
+            <div class="project-card-text">
+              <h3 class="text-lg font-semibold text-white">和谐健康</h3>
+              <p class="mt-2 text-sm text-slate-400">视觉综合能力</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <section id="project-homepage-redesign" class="project-section">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-sky-300/80">项目一</p>
+            <h3 class="mt-2 text-2xl font-semibold text-white">首页改版 - 千人千面</h3>
+          </div>
+          <p class="max-w-xl text-sm leading-6 text-slate-400">设计自主驱动力与分区内容，支持多人多面策略。</p>
+        </div>
+        <div id="homepage-images" class="mt-8 grid gap-4"></div>
+      </section>
+
+      <section id="project-vipcard" class="project-section">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-sky-300/80">项目二</p>
+            <h3 class="mt-2 text-2xl font-semibold text-white">权益卡搭建</h3>
+          </div>
+          <p class="max-w-xl text-sm leading-6 text-slate-400">业务拆解分析能力，增强权益结构的清晰度。</p>
+        </div>
+        <div id="vipcard-images" class="mt-8 grid gap-4"></div>
+      </section>
+
+      <section id="project-rental" class="project-section">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-sky-300/80">项目三</p>
+            <h3 class="mt-2 text-2xl font-semibold text-white">租赁业务</h3>
+          </div>
+          <p class="max-w-xl text-sm leading-6 text-slate-400">UI赋能业务场景，提高体验和使用效率。</p>
+        </div>
+        <div id="rental-images" class="mt-8 grid gap-4"></div>
+      </section>
+
+      <section id="project-bend" class="project-section">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-sky-300/80">项目四</p>
+            <h3 class="mt-2 text-2xl font-semibold text-white">门店系统</h3>
+          </div>
+          <p class="max-w-xl text-sm leading-6 text-slate-400">B2B能力展示，构建清晰高效的门店运营界面。</p>
+        </div>
+        <div id="bend-images" class="mt-8 grid gap-4"></div>
+      </section>
+
+      <section id="project-insurance" class="project-section">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-sky-300/80">项目五</p>
+            <h3 class="mt-2 text-2xl font-semibold text-white">和谐健康小程序</h3>
+          </div>
+          <p class="max-w-xl text-sm leading-6 text-slate-400">视觉综合能力，呈现清晰友好的移动端体验。</p>
+        </div>
+        <div id="insurance-images" class="mt-8 grid gap-4"></div>
+      </section>
+
+    </section>
+
+  </main>
+
+  <footer id="footer" class="h-[400px] bg-[#0047FF]">
+    <div class="mx-auto flex h-full max-w-7xl items-center justify-center px-5">
+      <img src="./images/footer.png" alt="Footer" class="max-h-[340px] w-full object-contain" />
+    </div>
+  </footer>
+
+  <div class="fixed right-5 bottom-5 z-50 flex flex-col items-center gap-0">
+    <a href="#top" class="flex h-[60px] w-[60px] items-center justify-center rounded-tl-[8px] rounded-tr-[8px] bg-white/70 text-2xl font-bold text-slate-950 shadow-lg transition hover:bg-white/90">↑</a>
+    <a href="#footer" class="flex h-[60px] w-[60px] items-center justify-center rounded-bl-[8px] rounded-br-[8px] bg-white/70 text-2xl font-bold text-slate-950 shadow-lg transition hover:bg-white/90">↓</a>
+  </div>
+
+  <script>
+    const projectImageData = {
+      'homepage-images': {
+        folder: 'Homepage_Redesign',
+        images: ['page_004.png','page_005.png','page_006.png','page_007.png','page_008.png','page_009.png','page_010.png','page_011.png','page_012.png','page_013.png','page_014.png','page_015.png','page_016.png','page_017.png','page_018.png','page_019.png','page_020.png']
+      },
+      'vipcard-images': {
+        folder: 'VIPcard',
+        images: ['page_021.png','page_022.png','page_023.png','page_024.png','page_025.png','page_026.png','page_027.png','page_028.png','page_029.png','page_030.png','page_031.png','page_034.png','page_035.png','page_036.png','page_037.png','page_038.gif','page_038.png','page_039.png','page_040.png','page_041.png']
+      },
+      'rental-images': {
+        folder: 'Rental',
+        images: ['page_042.png','page_043.png','page_044.png','page_045.png','page_046.png','page_047.png','page_048.png','page_049.png']
+      },
+      'bend-images': {
+        folder: 'B2B',
+        images: ['page_050.png','page_051.png','page_052.png','page_053.png','page_054.png','page_055.png','page_056.png','page_057.png','page_058.png','page_059.png','page_060.png','page_061.png','page_062.png','page_063.png','page_064.png']
+      },
+      'insurance-images': {
+        folder: 'Insurance',
+        images: ['page_065.png','page_066.png','page_067.png','page_068.png','page_069.png','page_070.png','page_071.png','page_072.png','page_073.png','page_074.png','page_075.png']
+      }
+    };
+
+    Object.entries(projectImageData).forEach(([containerId, data]) => {
+      const container = document.getElementById(containerId);
+      if (!container) return;
+
+      data.images.forEach((name) => {
+        const img = document.createElement('img');
+        img.src = `./images/${data.folder}/${name}`;
+        img.alt = `${data.folder} ${name}`;
+        img.className = 'w-full rounded-[24px] object-cover';
+        img.loading = 'lazy';
+        container.appendChild(img);
+      });
+    });
+
+    const quickNav = document.getElementById('quick-nav');
+    window.addEventListener('scroll', () => {
+      if (!quickNav) return;
+      if (window.pageYOffset > 0) {
+        quickNav.classList.add('condensed');
+      } else {
+        quickNav.classList.remove('condensed');
+      }
+    }, { passive: true });
+
+  </script>
 </body>
 </html>
