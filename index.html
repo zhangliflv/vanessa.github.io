@@ -24,12 +24,6 @@
       scroll-margin-top: 120px;
     }
     
-    .quick-nav-head {
-      display: none;
-    }
-    #quick-nav.condensed .project-link img {
-      display: none;
-    }
     .project-link img {
       border-radius: 30px;
     }
@@ -44,41 +38,41 @@
   </style>
 </head>
 <body id="top" class="antialiased">
-  <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg">
-    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 py-5 md:flex-row md:items-center md:justify-between">
+    <header class="border-b border-slate-800 bg-slate-950/95 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-4 md:flex-row md:items-center md:justify-between md:gap-6">
       <div class="flex items-center gap-4">
-        <div class="flex h-20 w-20 items-center justify-center rounded-3xl bg-slate-800 text-3xl font-semibold text-sky-400 shadow-[0_10px_30px_rgba(56,189,248,0.16)]">V</div>
+        <div class="flex h-16 w-16 items-center justify-center rounded-3xl bg-slate-800 text-3xl font-bold text-sky-400 shadow-[0_10px_30px_rgba(56,189,248,0.16)] flex-shrink-0">V</div>
         <div>
           <p class="text-xs uppercase tracking-[0.35em] text-slate-500">产品设计 / 视觉体验</p>
-          <h1 class="mt-2 text-2xl font-semibold text-white">张丽芳</h1>
-          <p class="mt-1 max-w-xl text-sm leading-6 text-slate-400">专注现代简约风，擅长B端设计、视觉系统与产品交互。</p>
+          <h1 class="mt-1 text-xl font-semibold text-white">张丽芳</h1>
+          <p class="mt-1 max-w-lg text-xs leading-5 text-slate-400">专注现代简约风，擅长B端设计、视觉系统与产品交互。</p>
         </div>
       </div>
-      <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between md:gap-[150px]">
-        <div class="flex min-w-[260px] items-center gap-4">
-          <img src="./images/QRcode.png" alt="QRcode" class="h-20 w-20 object-cover" />
-          <div class="space-y-4 text-sm text-slate-200/70">
+      <div class="flex flex-col items-center gap-4 md:flex-row md:items-center md:justify-between md:gap-8">
+        <div class="flex min-w-[260px] items-center gap-3 flex-shrink-0">
+          <img src="./images/QRcode.png" alt="QRcode" class="h-16 w-16 object-cover flex-shrink-0" />
+          <div class="space-y-2 text-xs text-slate-200/70">
             <p class="font-semibold">联系方式</p>
-            <div class="space-y-1">
-              <p>手机号：18301414035</p>
-              <p>邮箱：zlf4990793@163.com</p>
+            <div class="space-y-1 text-slate-400">
+              <p>18301414035</p>
+              <p>zlf4990793@163.com</p>
             </div>
           </div>
         </div>
-      <nav class="flex flex-wrap items-center gap-3 text-sm font-medium text-slate-400">
-        <a href="#works" class="nav-link transition">作品集</a>
+        <nav class="flex flex-wrap items-center gap-4 text-xs font-medium text-slate-400">
+          <a href="#works" class="nav-link transition hover:text-slate-200">作品集</a>
           <span class="cursor-not-allowed text-slate-500">学习资料</span>
           <span class="cursor-not-allowed text-slate-500">练习册</span>
           <span class="cursor-not-allowed text-slate-500">关键词总结</span>
-      </nav>
-    </div>
+        </nav>
+      </div>
     </div>
   </header>
 
-  <main class="mx-auto max-w-7xl px-5 py-10">
+  <main class="w-full px-5 py-10">
     <section id="works" class="space-y-10">
-      <div id="quick-nav" class="sticky top-0 z-40 relative bg-slate-950/95 backdrop-blur-lg py-4">
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-5 px-5">
+      <div id="quick-nav" class="relative bg-slate-950/95 backdrop-blur-lg py-4 -mx-5 px-5">
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           <a href="#project-homepage-redesign" class="group overflow-hidden project-link transition">
             <img src="./images/Homepage_Redesign/page_005.png" alt="首页改版封面" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105" />
             <div class="project-card-text">
@@ -125,7 +119,7 @@
           </div>
           <p class="max-w-xl text-sm leading-6 text-slate-400">设计自主驱动力与分区内容，支持多人多面策略。</p>
         </div>
-        <div id="homepage-images" class="mt-8 grid gap-4"></div>
+        <div id="homepage-images" class="mt-8 grid gap-4 grid-cols-1"></div>
       </section>
 
       <section id="project-vipcard" class="project-section">
@@ -136,7 +130,7 @@
           </div>
           <p class="max-w-xl text-sm leading-6 text-slate-400">业务拆解分析能力，增强权益结构的清晰度。</p>
         </div>
-        <div id="vipcard-images" class="mt-8 grid gap-4"></div>
+        <div id="vipcard-images" class="mt-8 grid gap-4 grid-cols-1"></div>
       </section>
 
       <section id="project-rental" class="project-section">
@@ -147,7 +141,7 @@
           </div>
           <p class="max-w-xl text-sm leading-6 text-slate-400">UI赋能业务场景，提高体验和使用效率。</p>
         </div>
-        <div id="rental-images" class="mt-8 grid gap-4"></div>
+        <div id="rental-images" class="mt-8 grid gap-4 grid-cols-1"></div>
       </section>
 
       <section id="project-bend" class="project-section">
@@ -158,7 +152,7 @@
           </div>
           <p class="max-w-xl text-sm leading-6 text-slate-400">B2B能力展示，构建清晰高效的门店运营界面。</p>
         </div>
-        <div id="bend-images" class="mt-8 grid gap-4"></div>
+        <div id="bend-images" class="mt-8 grid gap-4 grid-cols-1"></div>
       </section>
 
       <section id="project-insurance" class="project-section">
@@ -169,15 +163,13 @@
           </div>
           <p class="max-w-xl text-sm leading-6 text-slate-400">视觉综合能力，呈现清晰友好的移动端体验。</p>
         </div>
-        <div id="insurance-images" class="mt-8 grid gap-4"></div>
+        <div id="insurance-images" class="mt-8 grid gap-4 grid-cols-1"></div>
       </section>
-
     </section>
-
   </main>
 
-  <footer id="footer" class="h-[400px] bg-[#0047FF]">
-    <div class="mx-auto flex h-full max-w-7xl items-center justify-center px-5">
+  <footer id="footer" class="w-full h-[400px] bg-[#0047FF]">
+    <div class="flex h-full items-center justify-center px-5">
       <img src="./images/footer.png" alt="Footer" class="max-h-[340px] w-full object-contain" />
     </div>
   </footer>
@@ -224,17 +216,6 @@
         container.appendChild(img);
       });
     });
-
-    const quickNav = document.getElementById('quick-nav');
-    window.addEventListener('scroll', () => {
-      if (!quickNav) return;
-      if (window.pageYOffset > 0) {
-        quickNav.classList.add('condensed');
-      } else {
-        quickNav.classList.remove('condensed');
-      }
-    }, { passive: true });
-
   </script>
 </body>
 </html>
